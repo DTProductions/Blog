@@ -53,7 +53,7 @@
         },
         "datePublished": "2025-01-21",
         "description": "",
-        "wordCount":  723 ,
+        "wordCount":  721 ,
         "mainEntityOfPage": "True",
         "dateModified": "2025-01-21",
         "image": {
@@ -231,7 +231,7 @@ using the Python.NET library.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">PythonEngine</span><span class="p">.</span><span class="n">Initialize</span><span class="p">();</span> <span class="c1">// Initialization has to come before BeginAllowThreads</span>
 </span></span><span class="line"><span class="cl"><span class="n">PythonEngine</span><span class="p">.</span><span class="n">BeginAllowThreads</span><span class="p">();</span>
 </span></span></code></pre></div><p><code>PythonEngine.BeginAllowThreads()</code> frees the lock that the main thread currently holds (the one that calls <code>PythonEngine.Initialize()</code>).</p>
-<p>If you call <code>PythonEngine.BeginAllowThreads()</code>, all Python interpreter calls need to use the GIL lock, as shown in the following code snippet:</p>
+<p>If you call <code>PythonEngine.BeginAllowThreads()</code>, all Python interpreter calls need to use the GIL, as shown in the following code snippet:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">using</span> <span class="p">(</span><span class="n">Py</span><span class="p">.</span><span class="n">GIL</span><span class="p">())</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// Python code runs here</span>
 </span></span><span class="line"><span class="cl">    <span class="n">PythonEngine</span><span class="p">.</span><span class="n">RunSimpleString</span><span class="p">(</span><span class="s">&#34;print(&#39;Some python code just executed!&#39;)&#34;</span><span class="p">);</span>
@@ -291,7 +291,7 @@ fail execution, and the <code>Py.GIL()</code> block would still be necessary, as
 <p><em><strong>Second thread&rsquo;s Python code was executed!</strong></em></p>
 <p><em><strong>First thread&rsquo;s Python code was executed!</strong></em></p>
 <hr>
-<p>Depending on which thread acquires the GIL lock first.</p>
+<p>Depending on which thread acquires the GIL first.</p>
 <p>If the code did not use <code>PythonEngine.BeginAllowThreads()</code>, the output would then be:</p>
 <hr>
 <p><em><strong>First thread&rsquo;s Python code was executed!</strong></em></p>
