@@ -6,7 +6,20 @@
     <description>Recent content on Diogo Tosta Silva</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jan 2025 20:58:47 -0300</lastBuildDate><atom:link href="https://tostasilva.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 May 2025 22:01:05 -0300</lastBuildDate><atom:link href="https://tostasilva.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using ChatGPT And Prompt Engineering To Learn Undocumented Codebases And Libraries</title>
+      <link>https://tostasilva.com/posts/using-chatgpt-and-prompt-engineering-to-learn-undocumented-codebases-and-libraries/</link>
+      <pubDate>Thu, 29 May 2025 22:01:05 -0300</pubDate>
+      
+      <guid>https://tostasilva.com/posts/using-chatgpt-and-prompt-engineering-to-learn-undocumented-codebases-and-libraries/</guid>
+      
+      <description>&lt;p&gt;Learning how to navigate and understand undocumented codebases is a vital skill for software developers, which is why in this article I&amp;rsquo;d like to share some insights and techniques on how to make this process easier using ChatGPT (or any other similar tools).&lt;/p&gt;
+&lt;h2 id=&#34;using-chatgpt-the-right-way&#34;&gt;Using ChatGPT The Right Way&lt;/h2&gt;
+&lt;p&gt;AI tools are a wonderful addition to a developer&amp;rsquo;s work environment and can exponentially increase productivity if used properly. However, developers should be mindful of how to use them.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>How To Run Python Code Concurrently In C# Using Python.NET</title>
       <link>https://tostasilva.com/posts/how-to-work-with-concurrency-in-pythonnet-using-c-sharp/</link>
